@@ -1,0 +1,33 @@
+.home {
+    list-style: none;
+    display: inline;
+    float: right;
+}
+
+.home li {
+    display: inline;
+    margin: 10px;
+}
+
+.form {
+    text-align: start;
+}
+
+.imagem img {
+    justify-content: center;
+    width: 900px;
+    height: 294px;
+    margin-top: 5px;
+}
+
+.imagem {
+    justify-content: center;
+    width: 900px;
+    height: 290px;
+    margin: auto;
+    
+}
+
+h4 {
+    text-align: center;
+}
