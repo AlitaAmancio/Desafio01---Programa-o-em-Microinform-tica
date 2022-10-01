@@ -1,2 +1,2 @@
 # Desafio01-Programacao-em-Microinformatica
-Primeiro projeto da matéria "Programação em Microinformática" da Fatec com as seguintes páginas: "Home", "Quem Somos" e "Contato".
+Este projeto, proposto na matéria "Programação em Microinformática" pelo professor Jean, conta com as páginas "Home", "Quem Somos" e "Contato", desenvolvidas com HTML e CSS. Além dessas páginas, como parte do desafio, houve a integração com um microframework em Python, o Flask.
