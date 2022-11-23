@@ -13,19 +13,18 @@
     text-align: start;
 }
 
-.imagem img {
+.conteudo img {
     justify-content: center;
     width: 900px;
     height: 294px;
     margin-top: 5px;
 }
 
-.imagem {
+.conteudo {
     justify-content: center;
     width: 900px;
     height: 290px;
-    margin: auto;
-    
+    margin: auto;   
 }
 
 h4 {

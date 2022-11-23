@@ -1,38 +1,19 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <link rel="stylesheet" href="static/style.css">
-</head>
-<body background="static/img/fundo.jpeg">
-    <header class="header">
-        <img src="static/img/logo.png" alt="logo.png">
-        <div class="home">
-            <ul class="links">
-                <li><a href="/home">Home</li></a><em>|</em>
-                <li><a href="/quemSomos">Quem Somos</li></a><em>|</em>
-                <li><a href="/contato">Contato</li></a>
-            </ul>
-        </div>
-    </header>
+{% extends "base.html" %}
 
-    <div class="imagem"><img src="static/img/tecnologia.jpeg" alt="capa">
-        <h1>Sobre a universidade</h1>
-        <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur, natus aliquam deserunt nisi suscipit iure voluptatum dignissimos quam eligendi ducimus. Doloremque exercitationem, quod aliquid provident obcaecati ipsa! Culpa, laboriosam omnis? 
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet fuga nihil error dolorum atque delectus architecto hic, eos ullam sint consectetur, dignissimos tempora asperiores a quidem facilis beatae nemo sequi?
-        </p>
-        <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur, natus aliquam deserunt nisi suscipit iure voluptatum dignissimos quam eligendi ducimus. Doloremque exercitationem, quod aliquid provident obcaecati ipsa! Culpa, laboriosam omnis? 
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet fuga nihil error dolorum atque delectus architecto hic, eos ullam sint consectetur, dignissimos tempora asperiores a quidem facilis beatae nemo sequi?
-        </p>
-        <h4>
-            Todos os direitos reservados.
-        </h4>
-    </div>
-    
-</body>
-</html>
+    {% block content %}
+    <body background="static/img/fundo.jpeg">
+        <img src="static/img/tecnologia.jpeg" alt="capa">
+            <h1>Sobre a universidade</h1>
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur, natus aliquam deserunt nisi suscipit iure voluptatum dignissimos quam eligendi ducimus. Doloremque exercitationem, quod aliquid provident obcaecati ipsa! Culpa, laboriosam omnis? 
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet fuga nihil error dolorum atque delectus architecto hic, eos ullam sint consectetur, dignissimos tempora asperiores a quidem facilis beatae nemo sequi?
+            </p>
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur, natus aliquam deserunt nisi suscipit iure voluptatum dignissimos quam eligendi ducimus. Doloremque exercitationem, quod aliquid provident obcaecati ipsa! Culpa, laboriosam omnis? 
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet fuga nihil error dolorum atque delectus architecto hic, eos ullam sint consectetur, dignissimos tempora asperiores a quidem facilis beatae nemo sequi?
+            </p>
+            <h4>
+                Todos os direitos reservados.
+            </h4>
+    </body>
+    {% endblock %}
