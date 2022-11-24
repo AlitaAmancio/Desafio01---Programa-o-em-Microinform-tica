@@ -1,5 +1,5 @@
 # Desafio01-Programacao-em-Microinformatica
-Projeto proposto na matéria "Programação em Microinformática" pelo professor Jean. Foi contruido em etapas, seguindo os seguintes desafios: 
+Projeto proposto na matéria "Programação em Microinformática" pelo professor Jean. Foi contruido em etapas, atendendo aos requisitos dos seguintes desafios: 
 
 Desafio 1: Desenvolver as páginas "Home", "Quem Somos" e "Contato" com HTML e CSS.
 
