@@ -27,6 +27,15 @@
     margin: auto;   
 }
 
+.tabela {
+    justify-content: space-between;
+    width: 100%;
+}
+
+table, th, td {
+    border: 2px solid black;
+}
+
 h4 {
     text-align: center;
 }

@@ -36,3 +36,22 @@ def insert_data(email, assunto, desc):
     values = [email, assunto, desc]
     cursor.execute(sql, values)
     db.commit()
+
+def find_data():
+    db = connect_db()
+    cursor = db.cursor()
+
+    cursor.execute("SELECT email FROM contato;")
+    email = cursor.fetchall()
+
+    cursor.execute("SELECT assunto FROM contato;")
+    assunto = cursor.fetchall()
+
+    cursor.execute("SELECT descricao FROM contato;")
+    descricao = cursor.fetchall()
+
+    info = [email, assunto, descricao]
+
+    return info
+    
+    

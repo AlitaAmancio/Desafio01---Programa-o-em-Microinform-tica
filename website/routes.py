@@ -1,5 +1,5 @@
 from flask import render_template, Blueprint, request, url_for
-from .database import insert_data
+from .database import insert_data, find_data
 
 routes = Blueprint('routes', __name__)
 
@@ -11,6 +11,15 @@ def home():
 @routes.route("/quemSomos")
 def quemSomos():
     return render_template("/quemSomos.html", title="Quem Somos")
+
+@routes.route("/informacoes")
+def info():
+    db_info = find_data()
+    email = db_info[0]
+    assunto = db_info[1]
+    descricao = db_info[2]
+    num = len(email)
+    return render_template("/informacoes.html", email=email, assunto=assunto, descricao=descricao, num=num, title="Informações")
 
 @routes.route("/contato", methods=["GET", "POST"])
 def contato():
