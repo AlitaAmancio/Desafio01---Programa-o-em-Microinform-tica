@@ -14,12 +14,11 @@ def quemSomos():
 
 @routes.route("/mensagens")
 def info():
-    db_info = find_data()
-    email = db_info[0]
-    assunto = db_info[1]
-    descricao = db_info[2]
-    num = len(email)
-    return render_template("/mensagens.html", email=email, assunto=assunto, descricao=descricao, num=num, title="Mensagens")
+    info = find_data()
+    if len(info) > 0:
+        return render_template("mensagens.html", info = find_data(), title="Mensagens")
+    else: 
+        return render_template("mensagens.html", title="Mensagens")
 
 @routes.route("/contato", methods=["GET", "POST"])
 def contato():

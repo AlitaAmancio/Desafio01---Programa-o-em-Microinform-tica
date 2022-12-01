@@ -25,7 +25,7 @@ def create_database():
 def create_contato_table():
     db = connect_db()
     cursor = db.cursor()
-    sql = "CREATE TABLE contato (email varchar(20), assunto varchar(255), descricao varchar(255));"
+    sql = "CREATE TABLE contato (email varchar(255), assunto varchar(255), descricao varchar(255));"
     cursor.execute(sql)
     db.commit()
 
@@ -39,19 +39,9 @@ def insert_data(email, assunto, desc):
 
 def find_data():
     db = connect_db()
-    cursor = db.cursor()
-
-    cursor.execute("SELECT email FROM contato;")
-    email = cursor.fetchall()
-
-    cursor.execute("SELECT assunto FROM contato;")
-    assunto = cursor.fetchall()
-
-    cursor.execute("SELECT descricao FROM contato;")
-    descricao = cursor.fetchall()
-
-    info = [email, assunto, descricao]
-
+    cur = db.cursor()
+    cur.execute("SELECT *  FROM contato;")
+    info = cur.fetchall()
     return info
     
     

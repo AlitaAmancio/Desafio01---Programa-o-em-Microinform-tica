@@ -9,21 +9,25 @@
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum facilis odit itaque recusandae ipsam veritatis, quibusdam praesentium quod error molestiae eligendi qui temporibus, soluta sequi quaerat unde magnam distinctio libero!
         </p>
         <hr>
-        
+        {% if info %}
         <table class="tabela">
         <tr>
           <th>Email</th>
           <th>Assunto</th>
           <th>Descrição</th>
         </tr>
-        {% for i in range(num) %}
+        {% for i in info %}
         <tr>
-            <td> {{ email[i] }} </td>
-            <td> {{ assunto[i] }} </td>
-            <td> {{ descricao[i] }} </td>
+            <td> {{ i[0] }} </td>
+            <td> {{ i[1] }} </td>
+            <td> {{ i[2] }} </td>
         </tr>
-            {% endfor %}
+        {% endfor %}
       </table>
+
+        {% else %}
+        <h3>Ainda não recebemos nenhuma mensagem.</h3>
+        {% endif %}
 
         <br><br><br>
         <h4>Todos os direitos reservados.</h4>
