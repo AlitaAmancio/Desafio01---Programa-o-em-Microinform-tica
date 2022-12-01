@@ -12,14 +12,14 @@ def home():
 def quemSomos():
     return render_template("/quemSomos.html", title="Quem Somos")
 
-@routes.route("/informacoes")
+@routes.route("/mensagens")
 def info():
     db_info = find_data()
     email = db_info[0]
     assunto = db_info[1]
     descricao = db_info[2]
     num = len(email)
-    return render_template("/informacoes.html", email=email, assunto=assunto, descricao=descricao, num=num, title="Informações")
+    return render_template("/mensagens.html", email=email, assunto=assunto, descricao=descricao, num=num, title="Mensagens")
 
 @routes.route("/contato", methods=["GET", "POST"])
 def contato():
